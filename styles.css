@@ -1,0 +1,47 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: "roboto", sans-serif;
+  color: #000;
+}
+
+#heading {
+  color: #222;
+  margin: 2.188rem 0 4rem;
+  text-transform: uppercase;
+}
+
+#text-holder {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
+}
+
+#enter_text {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1.5rem;
+  width: 43.75rem;
+  height: fit-content;
+  border: transparent;
+  box-shadow: 0 1px 8px #999;
+  border-radius: 3px;
+}
+
+.fa-save {
+  right: 0;
+  bottom: 0;
+  padding-top: 1.2rem;
+  color: #555;
+  font-size: 150%;
+}
+
+.newDivClass {
+  border: 1px solid #888;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1.5rem;
+}
