@@ -1,13 +1,3 @@
-// var newNote = document.createElement("p");
-// var noteText = document.getElementById("enter_text").innerHTML;
-
-// var newTextNode = document.createTextNode(noteText);
-// newNote.appendChild(newTextNode);
-
-// var newDiv = document.getElementById("note_div");
-
-// newDiv.appendChild(newNote);
-
 var makeNewNote = function () {
   var newPara = document.createElement("p");
   newPara.setAttribute("class", "newParaClass");
