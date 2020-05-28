@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;1,500&display=swap");
+
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
-  font: "roboto", sans-serif;
   color: #000;
 }
 
@@ -14,11 +17,8 @@ body {
 
 /*************** The input text box ***************/
 
-#text-holder {
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3.5rem;
+#note_row {
+  margin-bottom: 5rem;
 }
 
 #enter_text {
@@ -30,15 +30,34 @@ body {
   border: transparent;
   border-radius: 20px;
   box-shadow: 0 1px 8px #999;
-  outline: none; /* removes outline of div when it is selected */
 }
 
 #enter_text:hover {
   box-shadow: 0 1px 8px #777;
 }
 
+#text_title {
+  margin: 10px 5px;
+  outline: none;
+  font-weight: 500;
+  color: #333;
+}
+
+#text_body {
+  margin: 10px 5px;
+  outline: none;
+  color: #111;
+}
+
+#enter_text hr {
+  margin: 0;
+}
+
 .input_text_options {
-  padding: 0.25rem 0.5rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 43.75rem;
+  padding: 0.25rem 1rem 0;
   text-align: right;
 }
 
@@ -66,9 +85,16 @@ body {
 }
 
 .note_text {
-  margin: 1rem 1rem 1.2rem 1rem;
+  margin: 1.1rem 1rem 1.2rem 1rem;
   overflow: hidden;
   word-wrap: break-word;
+  font-size: 100%;
+}
+
+.note_text p:nth-child(1) {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 105%;
 }
 
 .note_options {

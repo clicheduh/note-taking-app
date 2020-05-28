@@ -31,29 +31,30 @@
     <h2 id="heading" class="text-center">Note Taking App</h2>
 
     <div class="container">
-        <div id="note_row" class="row">
+        <div id="note_row">
             <div class="col-12">
-                <div id="text-holder">
-                    <div id="enter_text" class="col-12" role="textbox" contenteditable="true" aria-multiline="true"
-                        placeholder="Enter text here">
-                    </div>
-                    <div class="input_text_options">
-                        <span id="save_note" role="button"><i class="far fa-save" onclick="makeNewNote()"></i></span>
-                    </div>
+                <div id="enter_text">
+                    <div id="text_title" contenteditable="true" role="textbox" aria-multiline="true"></div>
+                    <hr>
+                    <div id="text_body" contenteditable="true" role="textbox" aria-multiline="true"></div>
                 </div>
-            </div>
-            <div class="note_cell col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <div class="note_layout">
-                    <div class="note_text">
-                        <p class="newParaClass">Hello this is bittu shrivastav and tell me why ain't nothing but a
-                            heart-ache tell me henceforth</p>
-                    </div>
-                    <div class="note_options">
-                        <span><i class="fas fa-times"></i></span>
-                    </div>
+                <div class=" input_text_options">
+                    <span id="save_note" role="button"><i class="far fa-save" onclick="makeNewNote()"></i></span>
                 </div>
             </div>
         </div>
+        <!-- <div class="note_cell col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="note_layout">
+                <div class="note_text">
+                    <p>This is the title</p>
+                    <p>Hello tell me why ain't nothing but a heart-ache tell me henceforth</p>
+                </div>
+                <div class="note_options">
+                    <span><i class="fas fa-times"></i></span>
+                </div>
+            </div>
+        </div> -->
+    </div>
     </div>
     <script src="./app.js"></script>
 </body>

@@ -1,3 +1,4 @@
+/* MAKE NEW NOTE FUNCTION */
 var makeNewNote = function () {
   var cellContainer = document.getElementById("note_row");
 
@@ -19,12 +20,19 @@ var makeNewNote = function () {
   divNoteText.setAttribute("class", "note_text");
   divNote.appendChild(divNoteText);
 
-  var newPara = document.createElement("p"); // Para for note text div
-  divNoteText.appendChild(newPara);
+  var newParaTitle = document.createElement("p"); // Para for note title
+  divNoteText.appendChild(newParaTitle);
 
-  var enterText = document.getElementById("enter_text"); // Text taken from input to new note
-  var newText = document.createTextNode(enterText.innerHTML);
-  newPara.appendChild(newText);
+  var enterTitle = document.getElementById("text_title"); // Text taken from input (title) to new note
+  var newTitle = document.createTextNode(enterTitle.innerHTML);
+  newParaTitle.appendChild(newTitle);
+
+  var newParaBody = document.createElement("p"); // Para for note body
+  divNoteText.appendChild(newParaBody);
+
+  var enterBody = document.getElementById("text_body"); // Text taken from input (body) to new note
+  var newBody = document.createTextNode(enterBody.innerHTML);
+  newParaBody.appendChild(newBody);
 
   // Note options
   var divNoteOptions = document.createElement("div"); // Note options div
