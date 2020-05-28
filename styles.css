@@ -12,6 +12,8 @@ body {
   text-transform: uppercase;
 }
 
+/*************** The input text box ***************/
+
 #text-holder {
   width: max-content;
   margin-left: auto;
@@ -26,8 +28,18 @@ body {
   width: 43.75rem;
   height: fit-content;
   border: transparent;
+  border-radius: 20px;
   box-shadow: 0 1px 8px #999;
-  border-radius: 3px;
+  outline: none; /* removes outline of div when it is selected */
+}
+
+#enter_text:hover {
+  box-shadow: 0 1px 8px #777;
+}
+
+.input_text_options {
+  padding: 0.25rem 0.5rem 0;
+  text-align: right;
 }
 
 .fa-save {
@@ -38,10 +50,47 @@ body {
   font-size: 150%;
 }
 
-.newDivClass {
-  border: 1px solid #888;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin: 1rem;
-  padding: 1.5rem;
+.fa-save:hover {
+  color: #777;
+}
+
+/*************** Saved notes ***************/
+
+.note_layout {
+  border: 1px solid #c5c3c3;
+  border-radius: 8px;
+}
+
+.note_layout:hover {
+  box-shadow: 0 1px 3px #d1cece;
+}
+
+.note_text {
+  margin: 1rem 1rem 1.2rem 1rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.note_options {
+  margin: 0 1rem 0.6rem;
+  text-align: right;
+}
+
+.fa-times {
+  color: #777;
+}
+
+.note_options span {
+  padding: 3px 8px;
+  border: transparent;
+  border-radius: 20px;
+}
+
+.note_options span:hover {
+  background-color: #ebebeb;
+}
+
+.fa-times:hover {
+  color: #555;
+  cursor: pointer;
 }
