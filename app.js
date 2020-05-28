@@ -42,7 +42,7 @@ var makeNewNote = function () {
   var spanNoteOptions = document.createElement("span"); // Delete note option
   divNoteOptions.appendChild(spanNoteOptions);
   var deleteNote = document.createElement("i");
-  deleteNote.setAttribute("class", "fas fa-times");
+  deleteNote.setAttribute("class", "fas fa-trash-alt");
   spanNoteOptions.appendChild(deleteNote);
 
   var removeNote = function () {

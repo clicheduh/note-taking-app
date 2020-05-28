@@ -31,8 +31,8 @@
     <h2 id="heading" class="text-center">Note Taking App</h2>
 
     <div class="container">
-        <div id="note_row">
-            <div class="col-12">
+        <div class="row" id="note_row">
+            <div class="input_text_div col-12">
                 <div id="enter_text">
                     <div id="text_title" contenteditable="true" role="textbox" aria-multiline="true"></div>
                     <hr>
@@ -42,19 +42,18 @@
                     <span id="save_note" role="button"><i class="far fa-save" onclick="makeNewNote()"></i></span>
                 </div>
             </div>
-        </div>
-        <!-- <div class="note_cell col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="note_layout">
-                <div class="note_text">
-                    <p>This is the title</p>
-                    <p>Hello tell me why ain't nothing but a heart-ache tell me henceforth</p>
-                </div>
-                <div class="note_options">
-                    <span><i class="fas fa-times"></i></span>
+            <div class="note_cell col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="note_layout">
+                    <div class="note_text">
+                        <p>This is the title</p>
+                        <p>Hello tell me why ain't nothing but a heart-ache tell me henceforth</p>
+                    </div>
+                    <div class="note_options">
+                        <span><i class="fas fa-trash-alt"></i></span>
+                    </div>
                 </div>
             </div>
-        </div> -->
-    </div>
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>

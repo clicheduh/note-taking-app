@@ -21,6 +21,10 @@ body {
   margin-bottom: 5rem;
 }
 
+.input_text_div {
+  margin-bottom: 6rem;
+}
+
 #enter_text {
   margin-left: auto;
   margin-right: auto;
@@ -78,6 +82,7 @@ body {
 .note_layout {
   border: 1px solid #c5c3c3;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .note_layout:hover {
@@ -98,11 +103,11 @@ body {
 }
 
 .note_options {
-  margin: 0 1rem 0.6rem;
+  margin: 0 0.7rem 0.6rem;
   text-align: right;
 }
 
-.fa-times {
+.fa-trash-alt {
   color: #777;
 }
 
